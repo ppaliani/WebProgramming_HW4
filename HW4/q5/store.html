@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Home</title>
+</head>
+<style>
+
+    body {
+        background-color: rgb(14, 15, 59);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+    padding: 5px;
+    border: solid rgb(125, 113, 255) 3px;
+    border-radius: 5px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgb(198, 198, 198);
+    }
+
+    #outer-container {
+        width: 100vw;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table {
+        border: solid 2px aliceblue;
+        border-radius: 10px;
+        padding: 25px;
+    }
+
+    td, th {
+        color: aliceblue;
+    }
+
+</style>
+<body>
+    <div id="outer-container">
+        <form method="post" id="form" action="store.php">
+            <table>
+                <tr>
+                    <th align="center">Options</th>
+                    <th align="center" colspan="2">Actions</th>
+                </tr>
+                <tr>
+                    <td><label for="users">Display all users:</label></td>
+                    <td><input type="radio" name="options" group="options" value="users"></td>
+                </tr>
+                <tr>
+                    <td><label for="items">Display all items:</label></td>
+                    <td><input type="radio" name="options" group="options" value="items"></td>
+                </tr>
+                <tr>
+                    <td><label for="orders">Display all orders</label></td>
+                    <td><input type="radio" name="options" group="options" value="orders"></td>
+                </tr>
+                <tr>
+                    <td><label for="not_shipped">Display non-shipped orders</label></td>
+                    <td><input type="radio" name="options" group="options" value="not_shipped"></td>
+                </tr>
+                <tr>
+                    <td><label for="ship">Ship an order:</label></td>
+                    <td><input type="radio" name="options" group="options" value="ship"></td>
+                    <td><input type="text" name="orderID" autocomplete="off" placeholder="OrderID"></td>
+                </tr>
+                <tr>
+                    <td><label for="add_item">Add an item:</label></td>
+                    <td><input type="radio" name="options" group="options" value="add_item"></td>
+                    <td><input type="text" name="itemID" autocomplete="off" placeholder="ItemID"></td>
+                </tr>
+                <tr>
+                    <td><label for="remove_item">Remove an item:</label></td>
+                    <td><input type="radio" name="options" group="options" value="remove_item"></td>
+                    <td><input type="text" name="itemID" autocomplete="off" placeholder="ItemID"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Submit" class="btn"></td>
+                    <td colspan="2"><input type="text" name="passcode" placeholder="Passcode" autocomplete="off"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

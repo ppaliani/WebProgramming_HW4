@@ -1,0 +1,25 @@
+===Database db5
+
+== Table structure for table orders
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|varchar(255)|No|
+|card|char(16)|No|
+|address|varchar(255)|No|
+|burger|int(11)|No|
+|pizza|int(11)|No|
+|soda|int(11)|No|
+== Dumping data for table orders
+
+== Table structure for table password
+
+|------
+|Column|Type|Null|Default
+|------
+|pwd|int(11)|No|
+== Dumping data for table password
+
+|999

@@ -1,0 +1,52 @@
+===Database db4
+
+== Table structure for table exam
+
+|------
+|Column|Type|Null|Default
+|------
+|question|varchar(255)|No|
+|answer1|varchar(255)|No|
+|answer2|varchar(255)|No|
+|answer3|varchar(255)|No|
+|answer4|varchar(255)|No|
+|correct|varchar(255)|No|
+== Dumping data for table exam
+
+|What is the first language students learn at EMU in COSC?|Java|JavaScript|GO|LISP|Java
+|What language is currently the most sought after?|Rust|MySQL|JavaScript|Ruby|JavaScript
+|What type of language paradigm does Prolog fall under?|Functional|Logical|Imperative|OO|Functional
+|What type of language paradigm does Fortran fall under?|Functional|Logical|Imperative|OO|Imperative
+|What model is used for determining margin, border, padding, and content size?|The Standard Model|The Box Model|The Spacing Model|The Size Model|The Box Model
+
+== Table structure for table password
+
+|------
+|Column|Type|Null|Default
+|------
+|pwd|int(11)|No|
+== Dumping data for table password
+
+|999
+
+== Table structure for table students
+
+|------
+|Column|Type|Null|Default
+|------
+|name|varchar(255)|No|
+|code|int(11)|No|
+|complete|int(11)|No|
+|score|int(11)|No|
+== Dumping data for table students
+
+|John|111|0|0
+|Mary|222|0|0
+|Tim|333|0|0
+|Sue|444|0|0
+|Ken|555|0|0
+|Greg|666|0|0
+|James|777|0|0
+|Pam|888|0|0
+|Chris|999|0|0
+|Nancy|123|0|0

@@ -1,0 +1,47 @@
+database - db3
+
+table - orders(auto id, name, card, address, burger, pizza, soda)
+      - password(pwd)
+
+command line - fill password
+
+customer.html - form has three check boxes, three text boxes, submit
+              - calls customer.php
+
+customer.php - get name, card, address from GET array
+             - get burger, pizza, soda information from GET array
+             - insert name, card, address, burger, pizza, soda into orders
+
+             - print confirmation message
+             - use information above
+             - print in table format
+
+store.html - form has text box, submit
+           - calls orders.php
+
+orders.php - get user's pwd from GET array 
+           - retrieve pwd from password
+           - check with user's pwd
+           - no match, say invalid pwd
+ 
+           - select all rows from orders
+           - go thru each row
+           - find burger, pizza, soda order information
+           - print id, burger, pizza, soda, name, card, address
+           - print in required format
+ 
+           - form has text box and submit
+           - calls update.php
+           
+update.php - get id from GET array
+           - delete the order with that id from orders
+
+           - select all rows from orders
+           - go thru each row
+           - find burger, pizza, soda order information
+           - print id, burger, pizza, soda, name, card, address
+           - print in required format
+
+           - form has text box and submit
+           - calls update.php
+

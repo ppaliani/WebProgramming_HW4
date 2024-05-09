@@ -1,0 +1,80 @@
+===Database db8
+
+== Table structure for table items
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|name|varchar(255)|No|
+|price|int(11)|No|
+== Dumping data for table items
+
+|1|Hammer|12
+|2|Screwdriver|8
+|3|Wrench|8
+|4|Drill|15
+|5|Nail|1
+|6|Screw|1
+|7|Sandpaper|3
+|8|Pen|2
+|9|Pencil|2
+|10|Sharpie|3
+|11|Saw|9
+== Table structure for table orders
+
+|------
+|Column|Type|Null|Default
+|------
+|//**orderID**//|int(11)|No|
+|userID|int(11)|No|
+|itemID|int(11)|No|
+|quantity|int(11)|No|
+|shipped|int(11)|No|
+== Dumping data for table orders
+
+|1|1|2|2|1
+|2|1|4|10|1
+|3|1|1|12|1
+|4|1|2|8|1
+|5|1|3|8|1
+|6|1|1|12|0
+|7|1|2|8|0
+|8|1|3|8|0
+|9|1|1|12|0
+|10|1|2|8|0
+|11|1|3|8|0
+|12|3|1|12|0
+|13|3|2|8|0
+|14|3|3|8|0
+|15|3|4|15|0
+|16|1|1|12|0
+|17|1|2|8|0
+|18|1|3|8|0
+|19|1|1|10|0
+|20|1|2|5|1
+|21|1|3|15|0
+== Table structure for table passcode
+
+|------
+|Column|Type|Null|Default
+|------
+|passcode|int(11)|No|
+== Dumping data for table passcode
+
+|999
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|id|int(11)|No|
+|pwd|varchar(255)|No|
+|name|varchar(255)|No|
+|address|varchar(255)|No|
+|card|int(11)|No|
+== Dumping data for table users
+
+|1|123|John|123 Main St|12345678
+|2|123|123|123|123
+|3|123|Mary|123 Main St|12345678

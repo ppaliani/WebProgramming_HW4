@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+
+    body {
+        background-color: rgb(14, 15, 59);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+
+    #large-container {
+        width: 20vw;
+    }
+
+    #inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        border: solid 2px aliceblue;
+        border-radius: 10px;
+    }
+
+    .btn {
+        padding: 5px;
+        border: solid rgb(125, 113, 255) 3px;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+        cursor: pointer;
+        background-color: rgb(198, 198, 198);
+    }
+
+    label {
+        color: aliceblue;
+    }
+
+    .inputs {
+        margin: 10px;
+    }
+    
+    </style>
+
+</head>
+<body>
+    <div id="large-container">
+        <form method="post" id="inner-container">
+            <div class="inputs">
+                <label for="user_id">User ID: </label>
+                <input type="text" name="user_id" id="user_id" autocomplete="off">
+            </div>
+            <div class="inputs">
+                <label for="password">Password: </label>
+                <input type="text" name="password" id="password" autocomplete="off">
+            </div>
+            <div class="inputs">
+                <input type="submit" onclick="submitForm('login.php')" value="Login" class="btn">
+                <input type="submit" onclick="submitForm('register.html')" value="Register" class="btn">
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        function submitForm(action) {
+          var form = document.getElementById('inner-container');
+          form.action = action;
+          form.submit();
+        }
+      </script>
+</body>
+</html>

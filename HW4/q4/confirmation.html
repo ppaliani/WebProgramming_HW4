@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+body {
+    background-color: rgb(14, 15, 59);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#large-container {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-containers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    border: solid 2px aliceblue;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 5px;
+    border: solid rgb(125, 113, 255) 3px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(198, 198, 198);
+}
+
+h1 {
+    color: aliceblue;
+}
+
+</style>
+<head>
+        <title>Register</title>
+</head>
+<body>
+    
+    <div id="large-container">
+        <div id="btn-container">
+            <h1>You have been successfully registered!</h1>
+            <a href="http://localhost:8000/in-class-demo/q4/login.html">
+                <button onclick="Continue()" id="cont-btn" class="btn">Continue</button>
+            </a>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function Continue() {
+            var button = document.getElementById('cont-btn');
+
+        }
+    </script>
+
+</body>
+</html>

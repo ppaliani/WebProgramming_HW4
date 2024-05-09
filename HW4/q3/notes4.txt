@@ -1,0 +1,60 @@
+database - db4
+
+table - exam(question, answer1, answer2, answer3, answer4, correct)
+      - students(name, code, complete, score)
+      - password(pwd)
+
+command line - fill exam
+             - fill students
+             - fill password
+
+exam.html - form has text box, submit
+          - calls exam.php
+
+exam.php - get user code from GET array
+         - select all rows from students
+         - search for user code
+
+         - user not found, say invalid passcode
+         - user found, already completed exam, say already completed
+
+         - form has questions, radio groups, text box, submit
+         - form must be created dynamically
+
+         - select all rows from exam
+         - put questions in form
+         - answers are in radio group
+         - radio group of each question must have a name, create it dynamically
+
+         - calls grade.php
+
+grade.php - get user code from GET array
+          - select all rows from students
+          - search for user code
+
+          - user not found, say invalid passcode
+          - user found, already completed exam, say already completed
+      
+          - initialize count to 0
+          - select all rows of exam
+          - go thru each row
+          - look at the correponding radio group in the GET array
+          - compare value from GET and correct answer
+          - if match increment count
+           
+          - update score of user in students using count
+           
+          - mark user has completed exam in students
+
+results.html - form has text box, submit
+             - calls results.php
+
+results.php - get user's pwd from GET array
+            - retrieve pwd from password
+            - check with user's pwd
+            - no match, say invalid pwd
+ 
+            - select all rows from students
+            - go thru each row
+            - print name, code, complete status, score
+            - print in table format
